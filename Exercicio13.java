@@ -11,13 +11,13 @@ public class Exercicio13 {
             int idade = Prompt.lerInteiro("Digite a idade da pessoa: ");
             String saude = Prompt.lerLinha("Digite a saúde da pessoa (boa/ruim): ");
 
-            Pessoa pessoa = new Pessoa(nome, sexo, idade, saude);
+            boolean apto = (sexo.charAt(0) == 'M' && idade >= 18 && idade <= 25 && saude.equalsIgnoreCase("boa"));
 
-            if (pessoa.estaApto()) {
-                Prompt.imprimir(pessoa.getNome() + " está apto para cumprir o serviço militar obrigatório.");
+            if (apto) {
+                Prompt.imprimir(nome + " está apto para cumprir o serviço militar obrigatório.");
                 totalAptos++;
             } else {
-                Prompt.imprimir(pessoa.getNome() + " não está apto para cumprir o serviço militar obrigatório.");
+                Prompt.imprimir(nome + " não está apto para cumprir o serviço militar obrigatório.");
                 totalInaptos++;
             }
         }

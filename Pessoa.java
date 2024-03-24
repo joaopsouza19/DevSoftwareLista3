@@ -12,7 +12,7 @@ public class Pessoa {
     }
 
     public boolean estaApto() {
-        return sexo.equalsIgnoreCase("M") && idade >= 18 && idade <= 25 && saude.equalsIgnoreCase("boa");
+        return sexo == "M" && idade >= 18 && idade <= 25 && saude.equalsIgnoreCase("boa");
     }
 
     public String getNome() {
