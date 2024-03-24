@@ -1,11 +1,17 @@
 public class Exercicio03 {
-    public static void executar(){
-        String nomeVendedor = Prompt.lerLinha("Informe o nome do vendedor: ");
-        double salarioVendedor = Prompt.lerDecimal("Informe o salário Fixo do vendedor " + nomeVendedor + ":");
-        double vendas = Prompt.lerDecimal("Informe o total de vendas mensal: ");
+    public static void executar() {
+        String nomeVendedor = LeitorVendedor.lerNomeVendedor();
+        double salarioFixo = LeitorVendedor.lerSalarioFixo();
+        double totalVendas = LeitorVendedor.lerTotalVendas();
 
-        double comissao = vendas * 0.15;
+        double salarioFinal = calcularSalarioFinal(salarioFixo, totalVendas);
+        Prompt.imprimir("Nome do vendedor: " + nomeVendedor);
+        Prompt.imprimir("Salário fixo: R$ " + salarioFixo);
+        Prompt.imprimir("Salário no final do mês: R$ " + salarioFinal);
+    }
 
-        Prompt.imprimir("O vendedor " + nomeVendedor + " tem um salário fixo de: " + salarioVendedor + " e seu salário total será: " + (comissao + salarioVendedor));
+    public static double calcularSalarioFinal(double salarioFixo, double totalVendas) {
+        double comissao = 0.15 * totalVendas; 
+        return salarioFixo + comissao;
     }
 }
