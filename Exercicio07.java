@@ -1,14 +1,18 @@
 public class Exercicio07 {
-    public static void executar(){
-        double custoFabrica = Prompt.lerDecimal("Digite o custo de fábrica do carro: ");
+    public static void executar() {
+        double custoFabrica = LeitorCustoFabrica.lerCustoFabrica();
+        double custoConsumidor = calcularCustoConsumidor(custoFabrica);
+        Prompt.imprimir("Custo ao consumidor: " + custoConsumidor);
+    }
 
-        double imposto = 0.45;
-        double distribuidor = 0.28;
+    public static double calcularCustoConsumidor(double custoFabrica) {
+        double percentualDistribuidor = 0.28;
+        double percentualImpostos = 0.45;
 
-        double impostos = custoFabrica * imposto;
-        double custoImpostos = custoFabrica + impostos;
-        double custoConsumidor = custoImpostos + (custoImpostos * distribuidor);
+        double custoImpostos = custoFabrica * percentualImpostos;
+        double custoComImpostos = custoFabrica + custoImpostos;
+        double custoConsumidor = custoComImpostos + (custoComImpostos * percentualDistribuidor);
 
-        Prompt.imprimir("O custo ao consumidor do carro é: " + custoConsumidor);
+        return custoConsumidor;
     }
 }
