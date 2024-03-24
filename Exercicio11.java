@@ -24,7 +24,7 @@ public class Exercicio11 {
         Prompt.imprimir("Total de mulheres: " + totalMulheres);
     }
 
-    private static char lerSexo(String mensagem) {
+    public static char lerSexo(String mensagem) {
         char sexo;
         do {
             sexo = Prompt.lerLinha(mensagem).toUpperCase().charAt(0);
