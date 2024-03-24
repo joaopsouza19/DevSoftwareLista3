@@ -1,10 +1,13 @@
 public class Exercicio06 {
     public static void executar() {
-        double custo = Prompt.lerDecimal("Digite o preço de custo do produto: ");
-        double acrescimo = Prompt.lerDecimal("Digite o percentual de acréscimo: ");
+        double precoCusto = LeitorPrecoCusto.lerPrecoCusto();
+        double percentualAumento = LeitorPrecoCusto.lerPercentualAumento();
+        double precoVenda = calcularPrecoVenda(precoCusto, percentualAumento);
+        Prompt.imprimir("O preço de venda do produto é: " + precoVenda);
+    }
 
-        double venda = custo * (1 + acrescimo / 100);
-
-        Prompt.imprimir("O preço de venda do produto é: " + venda);
+    public static double calcularPrecoVenda(double precoCusto, double percentualAumento) {
+        double aumento = precoCusto * (percentualAumento / 100);
+        return precoCusto + aumento;
     }
 }
