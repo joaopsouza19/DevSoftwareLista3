@@ -1,10 +1,13 @@
 public class Exercicio02 {
-    public static void executar(){
-        double dist = Prompt.lerDecimal("Informe a distância total: ");
-        double combus = Prompt.lerDecimal("Informe o gasto total do combustível: ");
+    public static void executar() {
+        double distanciaPercorrida = LeitorConsumoAutomovel.lerDistanciaPercorrida();
+        double combustivelGasto = LeitorConsumoAutomovel.lerCombustivelGasto();
 
-        double consumo = dist / combus;
+        double consumoMedio = calcularConsumoMedio(distanciaPercorrida, combustivelGasto);
+        Prompt.imprimir("O consumo médio do automóvel é: " + consumoMedio + " km/l");
+    }
 
-        Prompt.imprimir("O consumo do carro na viagem foi " + consumo + " litros");
+    public static double calcularConsumoMedio(double distanciaPercorrida, double combustivelGasto) {
+        return distanciaPercorrida / combustivelGasto;
     }
 }
