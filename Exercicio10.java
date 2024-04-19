@@ -1,3 +1,5 @@
+import br.edu.up.Prompt;
+
 public class Exercicio10 {
     public static void executar() {
         int quantidadePessoas = LerEntrada.lerQuantidade();

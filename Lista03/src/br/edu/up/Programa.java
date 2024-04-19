@@ -8,8 +8,11 @@ public class Programa {
         // Exercicio01 ex1 = new Exercicio01();
         // ex1.executar();
 
-        Exercicio02 ex2 = new Exercicio02();
-        ex2.executar();
+        // Exercicio02 ex2 = new Exercicio02();
+        // ex2.executar();
+
+        Exercicio03 ex3 = new Exercicio03();
+        ex3.executar();
 
     }
 

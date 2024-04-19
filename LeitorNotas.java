@@ -1,3 +1,5 @@
+import br.edu.up.Prompt;
+
 public class LeitorNotas {
     public static String lerNomeAluno() {
         return Prompt.lerLinha("Digite o nome do aluno: ");

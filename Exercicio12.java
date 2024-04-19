@@ -1,3 +1,5 @@
+import br.edu.up.Prompt;
+
 public class Exercicio12 {
      public static void executar() {
         int totalCarrosAte2000 = 0;

@@ -1,3 +1,5 @@
+import br.edu.up.Prompt;
+
 public class Exercicio13 {
     public static void executar() {
         int totalAptos = 0;

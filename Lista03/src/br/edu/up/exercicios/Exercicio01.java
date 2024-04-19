@@ -1,6 +1,7 @@
 package br.edu.up.exercicios;
 
 import br.edu.up.modelos.LeitorNotasAluno;
+import br.edu.up.Prompt;
 
 public class Exercicio01 {
 
@@ -10,7 +11,7 @@ public class Exercicio01 {
 
         aluno.calculaMedia(9.0, 6.5, 5.4);
 
-        System.out.println("Nome: " + aluno.getNome());
-        System.out.println("Média: " + aluno.getMedia());
+        Prompt.imprimir("Nome: " + aluno.getNome());
+        Prompt.imprimir("Média: " + aluno.getMedia());
     }
 }

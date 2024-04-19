@@ -1,3 +1,5 @@
+import br.edu.up.Prompt;
+
 public class LeitorNumeros {
     public static int[] lerNumeros(int quantidade) {
         int[] numeros = new int[quantidade];

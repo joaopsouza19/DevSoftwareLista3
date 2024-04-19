@@ -1,3 +1,5 @@
+import br.edu.up.Prompt;
+
 public class Exercicio06 {
     public static void executar() {
         double precoCusto = LeitorPrecoCusto.lerPrecoCusto();

@@ -1,3 +1,5 @@
+import br.edu.up.Prompt;
+
 public class Exercicio05 {
     public static void executar() {
         double valorCompra = LeitorValorCompra.lerValorCompra();

@@ -1,3 +1,5 @@
+import br.edu.up.Prompt;
+
 public class Exercicio09 {
     public static void executar() {
         int quantidade = 80;

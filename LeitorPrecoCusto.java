@@ -1,3 +1,5 @@
+import br.edu.up.Prompt;
+
 public class LeitorPrecoCusto {
     public static double lerPrecoCusto() {
         return Prompt.lerDecimal("Digite o preço de custo do produto: ");

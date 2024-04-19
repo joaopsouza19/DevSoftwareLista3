@@ -1,3 +1,5 @@
+import br.edu.up.Prompt;
+
 public class LerEntrada {
     public static int lerQuantidade() {
         return Prompt.lerInteiro("Digite a quantidade de pessoas: ");

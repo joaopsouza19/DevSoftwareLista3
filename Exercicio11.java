@@ -1,3 +1,5 @@
+import br.edu.up.Prompt;
+
 public class Exercicio11 {
     public static void executar() {
         int totalHomens = 0;

@@ -1,3 +1,5 @@
+import br.edu.up.Prompt;
+
 public class Exercicio07 {
     public static void executar() {
         double custoFabrica = LeitorCustoFabrica.lerCustoFabrica();

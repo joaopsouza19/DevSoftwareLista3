@@ -1,3 +1,5 @@
+import br.edu.up.Prompt;
+
 public class Exercicio04 {
     public static void executar() {
         double cotacaoDolar = LeitorValores.lerCotacaoDolar();

@@ -1,3 +1,5 @@
+import br.edu.up.Prompt;
+
 public class Exercicio08 {
     public static void executar() {
         String nomeAluno = LeitorNotas.lerNomeAluno();

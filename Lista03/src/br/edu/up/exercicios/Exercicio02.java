@@ -1,6 +1,7 @@
 package br.edu.up.exercicios;
 
 import br.edu.up.modelos.LeitorConsumoAutomovel;
+import br.edu.up.Prompt;
 
 public class Exercicio02 {
 
@@ -10,7 +11,7 @@ public class Exercicio02 {
         double combustivelGasto = leitor.lerCombustivelGasto();
 
         double consumoMedio = calcularConsumoMedio(distanciaPercorrida, combustivelGasto);
-        System.out.println("O consumo médio do automóvel é: " + consumoMedio + " km/l");
+        Prompt.imprimir("O consumo médio do automóvel é: " + consumoMedio + " km/l");
     }
 
     public double calcularConsumoMedio(double distanciaPercorrida, double combustivelGasto) {
