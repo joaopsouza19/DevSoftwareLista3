@@ -1,3 +1,4 @@
+package br.edu.up.modelos;
 import br.edu.up.Prompt;
 
 public class LeitorValores {

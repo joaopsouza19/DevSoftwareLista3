@@ -1,4 +1,7 @@
+package br.edu.up.exercicios;
+
 import br.edu.up.Prompt;
+import br.edu.up.modelos.LeitorValores;
 
 public class Exercicio04 {
     public static void executar() {
