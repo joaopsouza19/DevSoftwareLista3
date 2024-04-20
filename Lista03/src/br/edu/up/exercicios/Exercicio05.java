@@ -12,6 +12,7 @@ public class Exercicio05 {
         Prompt.imprimir("O valor de cada prestação é: " + valorPrestacao);
     }
 
+    //
     public static double calcularValorPrestacao(double valorCompra, int numeroPrestacoes) {
         return valorCompra / numeroPrestacoes;
     }
