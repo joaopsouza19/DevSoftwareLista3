@@ -2,6 +2,8 @@ package br.edu.up.modelos;
 
 import java.util.Scanner;
 
+import br.edu.up.Prompt;
+
 public class LeitorConsumoAutomovel {
     private Scanner scanner;
 
@@ -10,12 +12,12 @@ public class LeitorConsumoAutomovel {
     }
 
     public double lerDistanciaPercorrida() {
-        System.out.print("Digite a distância total percorrida pelo automóvel (em km): ");
+        Prompt.imprimir("Digite a distância total percorrida pelo automóvel (em km): ");
         return scanner.nextDouble();
     }
 
     public double lerCombustivelGasto() {
-        System.out.print("Digite o total de combustível gasto (em litros): ");
+        Prompt.imprimir("Digite o total de combustível gasto (em litros): ");
         return scanner.nextDouble();
     }
 }

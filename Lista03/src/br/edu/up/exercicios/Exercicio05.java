@@ -4,7 +4,7 @@ import br.edu.up.Prompt;
 import br.edu.up.modelos.LeitorValorCompra;
 
 public class Exercicio05 {
-    public static void executar() {
+    public void executar() {
         double valorCompra = LeitorValorCompra.lerValorCompra();
         int numeroPrestacoes = 5;
 

@@ -1,7 +1,10 @@
+package br.edu.up.exercicios;
+
 import br.edu.up.Prompt;
+import br.edu.up.modelos.LeitorPrecoCusto;
 
 public class Exercicio06 {
-    public static void executar() {
+    public void executar() {
         double precoCusto = LeitorPrecoCusto.lerPrecoCusto();
         double percentualAumento = LeitorPrecoCusto.lerPercentualAumento();
         double precoVenda = calcularPrecoVenda(precoCusto, percentualAumento);
