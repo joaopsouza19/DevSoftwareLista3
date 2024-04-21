@@ -5,14 +5,15 @@ import br.edu.up.modelos.LeitorValores;
 
 public class Exercicio04 {
     public void executar() {
-        double cotacaoDolar = LeitorValores.lerCotacaoDolar();
-        double quantidadeDolar = LeitorValores.lerQuantidadeDolar();
+        LeitorValores.lerDados(); 
+
+        double cotacaoDolar = LeitorValores.getCotacaoDolar(); 
+        double quantidadeDolar = LeitorValores.getQuantidadeDolar(); 
 
         double valorEmReal = calcularValorEmReal(cotacaoDolar, quantidadeDolar);
         Prompt.imprimir("O valor em reais é: R$ " + valorEmReal);
     }
 
-    //
     private static double calcularValorEmReal(double cotacaoDolar, double quantidadeDolar) {
         return cotacaoDolar * quantidadeDolar;
     }

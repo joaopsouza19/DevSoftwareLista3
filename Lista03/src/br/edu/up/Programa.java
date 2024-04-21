@@ -17,7 +17,7 @@ public class Programa {
         // Exercicio04 ex4 = new Exercicio04();
         // ex4.executar();
 
-        // Exercicio06 ex5 = new Exercicio05();
+        // Exercicio05 ex5 = new Exercicio05();
         // ex5.executar();
 
         Exercicio06 ex6 = new Exercicio06();

@@ -7,10 +7,10 @@ public class Exercicio02 {
 
     public void executar() {
         LeitorConsumoAutomovel leitor = new LeitorConsumoAutomovel();
-        double distanciaPercorrida = leitor.lerDistanciaPercorrida();
-        double combustivelGasto = leitor.lerCombustivelGasto();
+        leitor.lerDistanciaPercorrida(); 
+        leitor.lerCombustivelGasto(); 
 
-        double consumoMedio = calcularConsumoMedio(distanciaPercorrida, combustivelGasto);
+        double consumoMedio = calcularConsumoMedio(leitor.getDistanciaPercorrida(), leitor.getCombustivelGasto());
         Prompt.imprimir("O consumo médio do automóvel é: " + consumoMedio + " km/l");
     }
 

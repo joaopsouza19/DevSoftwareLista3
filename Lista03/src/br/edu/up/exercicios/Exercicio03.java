@@ -6,9 +6,12 @@ import br.edu.up.Prompt;
 public class Exercicio03 {
 
     public void executar() {
-        String nomeVendedor = LeitorVendedor.lerNomeVendedor();
-        double salarioFixo = LeitorVendedor.lerSalarioFixo();
-        double totalVendas = LeitorVendedor.lerTotalVendas();
+        LeitorVendedor leitor = new LeitorVendedor();
+        leitor.lerDadosVendedor();
+
+        String nomeVendedor = leitor.getNomeVendedor();
+        double salarioFixo = leitor.getSalarioFixo();
+        double totalVendas = leitor.getTotalVendas();
 
         double salarioFinal = calcularSalarioFinal(salarioFixo, totalVendas);
         Prompt.imprimir("Nome do vendedor: " + nomeVendedor);

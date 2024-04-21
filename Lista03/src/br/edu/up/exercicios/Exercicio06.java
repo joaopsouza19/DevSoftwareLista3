@@ -5,8 +5,10 @@ import br.edu.up.modelos.LeitorPrecoCusto;
 
 public class Exercicio06 {
     public void executar() {
-        double precoCusto = LeitorPrecoCusto.lerPrecoCusto();
-        double percentualAumento = LeitorPrecoCusto.lerPercentualAumento();
+        LeitorPrecoCusto.lerDados(); 
+        double precoCusto = LeitorPrecoCusto.getPrecoCusto(); 
+        double percentualAumento = LeitorPrecoCusto.getPercentualAumento(); 
+
         double precoVenda = calcularPrecoVenda(precoCusto, percentualAumento);
         Prompt.imprimir("O preço de venda do produto é: " + precoVenda);
     }
