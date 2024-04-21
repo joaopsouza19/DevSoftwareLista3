@@ -1,9 +1,15 @@
+package br.edu.up.exercicios;
+
 import br.edu.up.Prompt;
+import br.edu.up.modelos.LeitorNotas;
 
 public class Exercicio08 {
-    public static void executar() {
-        String nomeAluno = LeitorNotas.lerNomeAluno();
-        double[] notas = LeitorNotas.lerNotas();
+    public void executar() {
+        LeitorNotas leitor = new LeitorNotas();
+        leitor.lerDados(); 
+
+        String nomeAluno = leitor.getNomeAluno();
+        double[] notas = leitor.getNotas();
 
         double media = calcularMedia(notas);
         String mencao = calcularMencao(media);

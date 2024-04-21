@@ -6,6 +6,7 @@ import br.edu.up.modelos.LeitorPrecoCusto;
 public class Exercicio06 {
     public void executar() {
         LeitorPrecoCusto.lerDados(); 
+
         double precoCusto = LeitorPrecoCusto.getPrecoCusto(); 
         double percentualAumento = LeitorPrecoCusto.getPercentualAumento(); 
 
