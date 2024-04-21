@@ -1,8 +1,14 @@
+package br.edu.up.exercicios;
+
 import br.edu.up.Prompt;
+import br.edu.up.modelos.LeitorCustoFabrica;
 
 public class Exercicio07 {
-    public static void executar() {
-        double custoFabrica = LeitorCustoFabrica.lerCustoFabrica();
+    public void executar() {
+        LeitorCustoFabrica.lerCustoFabrica(); 
+
+        double custoFabrica = LeitorCustoFabrica.getCustoFabrica(); 
+
         double custoConsumidor = calcularCustoConsumidor(custoFabrica);
         Prompt.imprimir("Custo ao consumidor: " + custoConsumidor);
     }
