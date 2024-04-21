@@ -1,8 +1,13 @@
+package br.edu.up.exercicios;
+
 import br.edu.up.Prompt;
+import br.edu.up.modelos.LerEntrada;
 
 public class Exercicio10 {
-    public static void executar() {
-        int quantidadePessoas = LerEntrada.lerQuantidade();
+    public void executar() {
+        LerEntrada.lerQuantidade();
+
+        int quantidadePessoas = LerEntrada.getQuantidade();
 
         for (int i = 0; i < quantidadePessoas; i++) {
             int idade = LerEntrada.lerIdade(i + 1);
