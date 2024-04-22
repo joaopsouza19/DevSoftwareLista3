@@ -77,8 +77,11 @@ public class Programa {
         // Exercicio24 ex24 = new Exercicio24();
         // ex24.executar();
 
-        Exercicio25 ex25 = new Exercicio25();
-        ex25.executar();
+        // Exercicio25 ex25 = new Exercicio25();
+        // ex25.executar();
+
+        Exercicio26 ex26 = new Exercicio26();
+        ex26.executar();
     }
 
 }
